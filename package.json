@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/minthammock-development/docker_workflow_example#readme",
   "dependencies": {
+    "ronin-database": "^0.1.1",
     "ronin-mocks": "^0.1.6",
     "ronin-server": "^0.1.3"
   }
