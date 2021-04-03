@@ -1,7 +1,23 @@
-version: '3.7'
+version: '3.8'
 
 services:
-  swarm-stack:
-    image: docker_workflow_example_notes
+  notes:
+    image: minthammock/simplewhale
+    build: 
+      context: .
+    deploy:
+      replicas: 6
+      placement:
+        max_replicas_per_node: 6
     ports:
-      - "8000:8000"
+    - 8000:8000
+    - 9229:9229
+    environment:
+    - SERVER_PORT=8000
+    - CONNECTIONSTRING=mongodb://mongo:27017/notes
+    volumes:
+    - ./:/app
+    command: npm run debug
+volumes:
+  mongodb:
+  mongodb_config:

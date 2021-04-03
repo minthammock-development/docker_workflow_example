@@ -1,1 +1,5 @@
 # docker_workflow_example
+
+This repo is a quick and dirty introduction to building application stack and running them on docker swarm. This deals with local deployments only and only explores some of the many features available for swarms. To check out what services are being used open the docker-compose.yml file or the swarm-stack.yaml file. These are declareative descriptions about how the stacks are created. If you go to the Dockerfile, you will see what the image minthammock/simplewhale is built on. This image includes a simple unit test integrated into the Dockerfile that will fail to build if the test is not passed. To change whether this build is passed, head over to the server.js file and correct or break the logic there.
+
+This repo is mostly a tutorial for my own sake and will not likely be useful to anyone else. If you want a full in depth tutorial I suggest heading to the official docker wedsite and checking out the step by steps. Much of what you see here was modeled on that tutorial.
