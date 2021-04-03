@@ -1,7 +1,7 @@
 version: '3.7'
 
 services:
-  bb-app:
-    image: bulletinboard:1.0
+  swarm-stack:
+    image: docker_workflow_example_notes
     ports:
-      - "8000:8080"
+      - "8000:8000"
