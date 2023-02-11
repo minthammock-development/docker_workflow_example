@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/minthammock-development/docker_workflow_example#readme",
   "dependencies": {
-    "nodemon": "^2.0.7",
+    "nodemon": "^2.0.20",
     "ronin-database": "^0.1.1",
     "ronin-mocks": "^0.1.6",
     "ronin-server": "^0.1.3"
